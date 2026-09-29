@@ -1,0 +1,39 @@
+"""Single source of truth for the paper reproduction protocol."""
+from pathlib import Path
+
+
+PACKAGE_ROOT = Path(__file__).resolve().parents[1]
+DATA_ROOT = PACKAGE_ROOT / "data"
+OUTPUT_ROOT = PACKAGE_ROOT / "outputs"
+
+CUB_FILES = ("cub200_resnet50_train.mat", "cub200_resnet50_test.mat")
+AIRCRAFT_FILES = (
+    "fgvc_aircraft48_resnet50_train.mat",
+    "fgvc_aircraft48_resnet50_test.mat",
+)
+
+INPUT_DIM = 2048
+NUM_CLASSES = 200
+PROJECTION_DIM = 199
+DIMENSION_SWEEP = (16, 32, 64, 199, 256, 512, 1024, 2048)
+BUFFER_CAPACITY = 8
+CAPACITY_SWEEP = (8, 12, 16, 30)
+
+SEED = 111
+LEARNING_RATE = 1e-3
+BATCH_SIZE = 128
+OFFLINE_EPOCHS = 100
+DIMENSION_SWEEP_OFFLINE_EPOCHS = 200
+EPOCHS_PER_UPDATE = 10
+WARM_START_ABLATION_EPOCHS = 30
+
+MLP_HIDDEN_DIMS = (350, 300)
+MLP_LEARNING_RATE = 2e-3
+MLP_WEIGHT_DECAY = 0.0
+MLP_DROPOUT = 0.25
+MLP_BATCH_NORM = True
+MLP_ACTIVATION = "elu"
+MLP_BATCH_SIZE = 100
+
+INFERENCE_WARMUPS = 10
+INFERENCE_REPEATS = 100

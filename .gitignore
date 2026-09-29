@@ -1,0 +1,32 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# External datasets, extracted features, and model checkpoints
+data/*
+!data/README.md
+*.mat
+*.pt
+*.pth
+*.ckpt
+
+# Generated experiment results; retain the bundled method illustrations
+outputs/*
+!outputs/figures/
+outputs/figures/*
+!outputs/figures/fig1_exstream_mechanism.png
+!outputs/figures/fig2_ncmml_projection.png
+!outputs/figures/fig4_training_framework.svg
