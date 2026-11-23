@@ -1,5 +1,15 @@
 # ExStream-NCMML paper reproduction
 
+## Paper
+
+**[Read the paper (PDF)](paper/ExStream_NCMML_Paper.pdf)**
+
+**A Lightweight Memory-Efficient Framework for Distance-Based Class-Incremental Learning**  
+Yibo Wang and Deepak S. Turaga  
+Status: Manuscript under review at PAKDD 2027.
+
+---
+
 This directory is the standalone source package for:
 
 > A Lightweight Memory-Efficient Framework for Distance-Based
